@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://images/buildings/tall-house-0000.png" type="Texture" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://images/buildings/tall-house-0002.png" type="Texture" id=3]
+[ext_resource path="res://images/buildings/long-house-0001.png" type="Texture" id=4]
+[ext_resource path="res://images/buildings/long-house-0002.png" type="Texture" id=5]
+[ext_resource path="res://images/buildings/long-house-0000.png" type="Texture" id=6]
+[ext_resource path="res://images/buildings/home.png" type="Texture" id=7]
+[ext_resource path="res://images/buildings/shop.png" type="Texture" id=8]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="tall-house-0000" type="Sprite" parent="."]
+position = Vector2( 250, 20 )
+texture = ExtResource( 1 )
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 474, 206 )
+
+[node name="tall-house-0002" type="Sprite" parent="."]
+position = Vector2( 266, 795 )
+texture = ExtResource( 3 )
+
+[node name="long-house-0001" type="Sprite" parent="."]
+position = Vector2( 910, 820 )
+texture = ExtResource( 4 )
+
+[node name="long-house-0002" type="Sprite" parent="."]
+position = Vector2( 1620, 820 )
+texture = ExtResource( 5 )
+
+[node name="long-house-0000" type="Sprite" parent="."]
+position = Vector2( 1610, 80 )
+texture = ExtResource( 6 )
+
+[node name="home" type="Sprite" parent="."]
+position = Vector2( 952, -81 )
+texture = ExtResource( 7 )
+
+[node name="shop" type="Sprite" parent="."]
+position = Vector2( 920, 1470 )
+texture = ExtResource( 8 )
